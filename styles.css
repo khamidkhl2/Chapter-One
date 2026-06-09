@@ -493,7 +493,8 @@ section{position:relative;z-index:2}
   opacity:0;animation:fadeUp .9s ease forwards;
 }
 .hero-logo{
-  width:92%;max-width:430px;border-radius:50%;
+  width:92%;max-width:430px;height:auto;aspect-ratio:1/1;object-fit:contain;
+  border-radius:50%;
   mix-blend-mode:multiply;animation:floaty 9s ease-in-out infinite;
 }
 
@@ -624,3 +625,25 @@ section{position:relative;z-index:2}
 .swatch.dimmed{opacity:.4}
 .card.hide{display:none}
 .empty-note{display:none;text-align:center;color:var(--text-muted);font-style:italic;font-family:var(--serif);font-size:1.3rem;padding:50px 0}
+
+/* ============ CATEGORY / TYPE CHIPS ============ */
+.filters-bar{padding:6px 0 0;position:relative;z-index:2}
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:14px}
+.chip-row[hidden]{display:none}
+.chip{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--navy);background:rgba(255,255,255,.55);
+  border:1px solid rgba(201,168,76,.45);border-radius:30px;padding:10px 22px;
+  cursor:pointer;transition:all .3s ease;
+}
+.chip:hover{border-color:var(--gold);transform:translateY(-2px)}
+.chip.active{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+
+/* ============ CARD META (colour + type badge) ============ */
+.card-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.card-meta .card-color{margin-top:0}
+.card-type{
+  font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(201,168,76,.5);border-radius:20px;padding:3px 10px;white-space:nowrap;
+}
+.desc-spacer{flex:1;min-height:10px}
