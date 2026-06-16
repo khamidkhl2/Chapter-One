@@ -35,10 +35,12 @@ const translations = {
     "pers.s1.t":"Выберите инициалы","pers.s1.d":"1–3 буквы","pers.s2.t":"Мы вышьем их","pers.s2.d":"Аккуратная вышивка","pers.s3.t":"Получите свою","pers.s3.d":"Уникальную сумочку",
     "pers.cta":"Заказать персонализацию",
     "home.featured":"Избранное","home.viewall":"Посмотреть всю коллекцию",
-    "page.collection.sub":"Бархатные косметички и сумочки с ручной вышивкой.",
-    "cat.all":"Все","cat.cosmetic":"Косметички","cat.bag":"Сумочки","cat.mom":"Для мам","cat.bride":"Для невест",
+    "page.collection.sub":"Бархатные косметички с ручной вышивкой — и ремешки Whoop 5.0.",
+    "cat.all":"Все","cat.cosmetic":"Косметички","cat.bag":"Сумочки","cat.mom":"Для мам","cat.bride":"Для невест","cat.whoop":"Whoop ремешки",
     "type.all":"Все","type.picture":"Рисунки","type.initials":"Инициалы","type.zodiac":"Знаки зодиака",
+    "type.leather":"Кожаные","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Инициалы","badge.zodiac":"Знак зодиака",
+    "badge.leather":"Кожа","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
     "filter.title":"Выберите по цвету","filter.hint":"Нажмите на цвет, чтобы отфильтровать коллекцию.",
     "filter.all":"Все цвета","filter.empty":"Ничего не найдено по этому фильтру.",
     "footer.tagline":"Эстетика Лондона в Ташкенте",
@@ -79,10 +81,12 @@ const translations = {
     "pers.s1.t":"Choose initials","pers.s1.d":"1–3 letters","pers.s2.t":"We embroider them","pers.s2.d":"Careful hand finish","pers.s3.t":"Receive yours","pers.s3.d":"A one-of-a-kind bag",
     "pers.cta":"Order personalization",
     "home.featured":"Featured","home.viewall":"View full collection",
-    "page.collection.sub":"Hand-embroidered velvet cosmetic cases and pouches.",
-    "cat.all":"All","cat.cosmetic":"Cosmetic cases","cat.bag":"Pouches","cat.mom":"For Mum","cat.bride":"For the Bride",
+    "page.collection.sub":"Hand-embroidered velvet pouches — and Whoop 5.0 bands.",
+    "cat.all":"All","cat.cosmetic":"Cosmetic cases","cat.bag":"Pouches","cat.mom":"For Mum","cat.bride":"For the Bride","cat.whoop":"Whoop bands",
     "type.all":"All","type.picture":"Designs","type.initials":"Initials","type.zodiac":"Zodiac",
+    "type.leather":"Leather","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initials","badge.zodiac":"Zodiac",
+    "badge.leather":"Leather","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
     "filter.title":"Filter by colour","filter.hint":"Tap a colour to filter the collection.",
     "filter.all":"All colours","filter.empty":"Nothing matches this filter yet.",
     "footer.tagline":"The aesthetic of London in Tashkent",
@@ -123,10 +127,12 @@ const translations = {
     "pers.s1.t":"Initsial tanlang","pers.s1.d":"1–3 harf","pers.s2.t":"Biz tikamiz","pers.s2.d":"Ehtiyotkor kashta","pers.s3.t":"Sumkangizni oling","pers.s3.d":"Yagona sumka",
     "pers.cta":"Shaxsiylashtirishga buyurtma",
     "home.featured":"Tanlangan","home.viewall":"To‘liq kolleksiyani ko‘rish",
-    "page.collection.sub":"Qo‘lda kashta tikilgan baxmal kosmetichka va sumkalar.",
-    "cat.all":"Hammasi","cat.cosmetic":"Kosmetichkalar","cat.bag":"Sumkalar","cat.mom":"Onalar uchun","cat.bride":"Kelinlar uchun",
+    "page.collection.sub":"Qo‘lda kashta tikilgan baxmal sumkalar — va Whoop 5.0 tasmalari.",
+    "cat.all":"Hammasi","cat.cosmetic":"Kosmetichkalar","cat.bag":"Sumkalar","cat.mom":"Onalar uchun","cat.bride":"Kelinlar uchun","cat.whoop":"Whoop tasmalar",
     "type.all":"Hammasi","type.picture":"Rasmlar","type.initials":"Initsiallar","type.zodiac":"Zodiak belgilari",
+    "type.leather":"Teri","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initsiallar","badge.zodiac":"Zodiak",
+    "badge.leather":"Teri","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
     "filter.title":"Rang bo‘yicha tanlang","filter.hint":"Kolleksiyani filtrlash uchun rangni bosing.",
     "filter.all":"Barcha ranglar","filter.empty":"Bu filtr bo‘yicha hech narsa topilmadi.",
     "footer.tagline":"London estetikasi Toshkentda",
@@ -156,7 +162,16 @@ const COLORS=[
   {id:"olive",     hex:"#6F7C3D", ru:"Олива",      en:"Olive",      uz:"Zaytun"},
   {id:"terracotta",hex:"#C16E4A", ru:"Терракота",  en:"Terracotta", uz:"Terrakota"},
   {id:"sky",       hex:"#7FB3D5", ru:"Небесный",   en:"Sky",        uz:"Osmon"},
-  {id:"forest",    hex:"#2F5D45", ru:"Лесной",     en:"Forest",     uz:"O‘rmon"}
+  {id:"forest",    hex:"#2F5D45", ru:"Лесной",     en:"Forest",     uz:"O‘rmon"},
+
+  /* band shades — Whoop 5.0 straps */
+  {id:"black",     hex:"#15151A", ru:"Чёрный",     en:"Black",      uz:"Qora"},
+  {id:"cognac",    hex:"#8A4B2B", ru:"Коньяк",     en:"Cognac",     uz:"Jigarrang"},
+  {id:"sand",      hex:"#D9C7A3", ru:"Песочный",   en:"Sand",       uz:"Qumrang"},
+  {id:"white",     hex:"#F2F2F0", ru:"Белый",      en:"White",      uz:"Oq"},
+  {id:"grey",      hex:"#9B9DA1", ru:"Серый",      en:"Grey",       uz:"Kulrang"},
+  {id:"berry",     hex:"#9E2B4E", ru:"Малиновый",  en:"Berry",      uz:"Malina"},
+  {id:"pink",      hex:"#E6A6BE", ru:"Розовый",    en:"Pink",       uz:"Pushti"}
 ];
 const COLOR_HEX={}; COLORS.forEach(c=>COLOR_HEX[c.id]=c.hex);
 
@@ -233,10 +248,10 @@ const PRODUCTS=[
   {id:"i-safari",name:"Safari Monogram",img:"img/initial-safari.jpg",category:"bag",price:900000,type:"initials",color:"navy",desc:{ru:"Буква с сафари-животными (A–Z)",en:"A letter with safari animals (A–Z)",uz:"Safari hayvonlari bilan harf (A–Z)"}},
 
   /* ---- Group 3: pouches for mum · 900 000 ---- */
-  {id:"mom-wildflowers",name:"Mum · Wildflowers",img:"img/mom-wildflowers.jpg",category:"mom",price:900000,color:"sage"},
-  {id:"mom-stars",name:"Mum · Stars",img:"img/mom-stars.jpg",category:"mom",price:900000,color:"navy"},
-  {id:"mom-daisies",name:"Mom · Daisies",img:"img/mom-daisies.jpg",category:"mom",price:900000,color:"ink"},
-  {id:"mom-heart",name:"Mom · Sacred Heart",img:"img/mom-heart.jpg",category:"mom",price:900000,color:"scarlet"},
+  {id:"mom-wildflowers",name:"Mum · Wildflowers",img:"img/mom-wildflowers.jpg",category:"mom",price:1000000,color:"sage"},
+  {id:"mom-stars",name:"Mum · Stars",img:"img/mom-stars.jpg",category:"mom",price:1000000,color:"navy"},
+  {id:"mom-daisies",name:"Mom · Daisies",img:"img/mom-daisies.jpg",category:"mom",price:1000000,color:"ink"},
+  {id:"mom-heart",name:"Mom · Sacred Heart",img:"img/mom-heart.jpg",category:"mom",price:1000000,color:"scarlet"},
 
   /* ---- Group 4: pouches for the bride · 900 000 ---- */
   {id:"bride-eucalyptus",name:"Bride · Eucalyptus",img:"img/bride-eucalyptus.jpg",category:"bride",price:900000,color:"linen"},
@@ -260,11 +275,37 @@ const PRODUCTS=[
   {id:"cos11-peaches",name:"Peaches",img:"img/cos11-peaches.jpg",category:"cosmetic",price:1100000,color:"coral",desc:{ru:"Персики на коралловом бархате",en:"Peaches on coral velvet",uz:"Marjon baxmalda shaftolilar"}},
   {id:"cos11-turtles-teal",name:"Sea Turtles",img:"img/cos11-turtles-teal.jpg",category:"cosmetic",price:1100000,color:"lagoon",desc:{ru:"Морские черепахи на бархате морской волны",en:"Sea turtles on teal velvet",uz:"Dengiz to‘lqini baxmalda toshbaqalar"}},
   {id:"cos11-turtles-sky",name:"Sea Turtles",img:"img/cos11-turtles-sky.jpg",category:"cosmetic",price:1100000,color:"sky",desc:{ru:"Морские черепахи на голубом бархате",en:"Sea turtles on sky-blue velvet",uz:"Osmon-ko‘k baxmalda toshbaqalar"}},
-  {id:"cos11-suns-terracotta",name:"Golden Suns",img:"img/cos11-suns-terracotta.jpg",category:"cosmetic",price:1100000,color:"terracotta",desc:{ru:"Золотые солнца на терракотовом бархате",en:"Golden suns on terracotta velvet",uz:"Terrakota baxmalda oltin quyoshlar"}}
+  {id:"cos11-suns-terracotta",name:"Golden Suns",img:"img/cos11-suns-terracotta.jpg",category:"cosmetic",price:1100000,color:"terracotta",desc:{ru:"Золотые солнца на терракотовом бархате",en:"Golden suns on terracotta velvet",uz:"Terrakota baxmalda oltin quyoshlar"}},
+
+  /* ===== WHOOP 5.0 BANDS ===== */
+
+  /* ---- Leather Band · $150 ---- */
+  {id:"w-leather-black",name:"Black / Silver",img:"img/whoop-leather-black-silver.jpg",category:"whoop",type:"leather",usd:165,color:"black",desc:{ru:"Чёрная кожа, серебристая фурнитура",en:"Black leather, silver hardware",uz:"Qora teri, kumush furnitura"}},
+  {id:"w-leather-black-gold",name:"Black / Gold",img:"img/whoop-leather-black-gold.jpg",category:"whoop",type:"leather",usd:165,color:"black",desc:{ru:"Чёрная кожа, золотистая фурнитура",en:"Black leather, gold hardware",uz:"Qora teri, oltin furnitura"}},
+  {id:"w-leather-cognac",name:"Cognac / Gold",img:"img/whoop-leather-cognac-gold.jpg",category:"whoop",type:"leather",usd:165,color:"cognac",desc:{ru:"Коньячная кожа, золотистая фурнитура",en:"Cognac leather, gold hardware",uz:"Jigarrang teri, oltin furnitura"}},
+  {id:"w-leather-black-classic",name:"Black · Classic",img:"img/whoop-leather-black-classic.jpg",category:"whoop",type:"leather",usd:165,color:"black",desc:{ru:"Чёрная кожа с классической прострочкой",en:"Black leather with classic stitching",uz:"Klassik tikuvli qora teri"}},
+  {id:"w-leather-cognac-classic",name:"Cognac · Classic",img:"img/whoop-leather-cognac-classic.jpg",category:"whoop",type:"leather",usd:165,color:"cognac",desc:{ru:"Коньячная кожа с классической прострочкой",en:"Cognac leather with classic stitching",uz:"Klassik tikuvli jigarrang teri"}},
+
+  /* ---- CloudKnit Band · $82 ---- */
+  {id:"w-cloud-berry",name:"Berry",img:"img/whoop-cloudknit-berry.jpg",category:"whoop",type:"cloudknit",usd:105,color:"berry",featured:true,desc:{ru:"Мягкий плетёный ремешок цвета малины",en:"Soft woven band in berry",uz:"Malina rang yumshoq to‘qima tasma"}},
+  {id:"w-cloud-sand",name:"Sand",img:"img/whoop-cloudknit-sand.jpg",category:"whoop",type:"cloudknit",usd:105,color:"sand",featured:true,desc:{ru:"Мягкий плетёный ремешок песочного цвета",en:"Soft woven band in sand",uz:"Qumrang yumshoq to‘qima tasma"}},
+
+  /* ---- SuperKnit Band · $70 ---- */
+  {id:"w-super-navy",name:"Navy",img:"img/whoop-superknit-navy.jpg",category:"whoop",type:"superknit",usd:95,color:"navy",featured:true,desc:{ru:"Эластичный вязаный ремешок, тёмно-синий",en:"Stretch knit band in navy",uz:"Cho‘ziluvchan trikotaj tasma, to‘q ko‘k"}},
+  {id:"w-super-black",name:"Black",img:"img/whoop-superknit-black.jpg",category:"whoop",type:"superknit",usd:95,color:"black",desc:{ru:"Эластичный вязаный ремешок, чёрный",en:"Stretch knit band in black",uz:"Cho‘ziluvchan trikotaj tasma, qora"}},
+  {id:"w-super-white",name:"White",img:"img/whoop-superknit-white.jpg",category:"whoop",type:"superknit",usd:95,color:"white",desc:{ru:"Эластичный вязаный ремешок, белый",en:"Stretch knit band in white",uz:"Cho‘ziluvchan trikotaj tasma, oq"}},
+  {id:"w-super-grey",name:"Grey",img:"img/whoop-superknit-grey.jpg",category:"whoop",type:"superknit",usd:95,color:"grey",desc:{ru:"Эластичный вязаный ремешок, серый",en:"Stretch knit band in grey",uz:"Cho‘ziluvchan trikotaj tasma, kulrang"}},
+  {id:"w-super-sand",name:"Sand",img:"img/whoop-superknit-sand.jpg",category:"whoop",type:"superknit",usd:95,color:"sand",desc:{ru:"Эластичный вязаный ремешок, песочный",en:"Stretch knit band in sand",uz:"Cho‘ziluvchan trikotaj tasma, qumrang"}},
+
+  /* ---- SuperKnit Luxe Band · $108 · gold hardware ---- */
+  {id:"w-luxe-black",name:"Black / Gold",img:"img/whoop-luxe-black.jpg",category:"whoop",type:"luxe",usd:130,color:"black",desc:{ru:"Премиум-вязка с золотой фурнитурой, чёрный",en:"Premium knit with gold hardware, black",uz:"Oltin furnituralı premium trikotaj, qora"}},
+  {id:"w-luxe-sand",name:"Sand / Gold",img:"img/whoop-luxe-sand.jpg",category:"whoop",type:"luxe",usd:130,color:"sand",desc:{ru:"Премиум-вязка с золотой фурнитурой, песочный",en:"Premium knit with gold hardware, sand",uz:"Oltin furnituralı premium trikotaj, qumrang"}},
+  {id:"w-luxe-pink",name:"Pink / Gold",img:"img/whoop-luxe-pink.jpg",category:"whoop",type:"luxe",usd:130,color:"pink",desc:{ru:"Премиум-вязка с золотой фурнитурой, розовый",en:"Premium knit with gold hardware, pink",uz:"Oltin furnituralı premium trikotaj, pushti"}},
+  {id:"w-luxe-navy",name:"Navy / Gold",img:"img/whoop-luxe-navy.jpg",category:"whoop",type:"luxe",usd:130,color:"navy",desc:{ru:"Премиум-вязка с золотой фурнитурой, тёмно-синий",en:"Premium knit with gold hardware, navy",uz:"Oltin furnituralı premium trikotaj, to‘q ko‘k"}}
 ];
 
 /* normalise defaults: category = cosmetic, price = 1 400 000 */
-PRODUCTS.forEach(p=>{ p.category = p.category || 'cosmetic'; if(p.price==null) p.price = 1400000; });
+PRODUCTS.forEach(p=>{ p.category = p.category || 'cosmetic'; if(p.usd==null && p.price==null) p.price = 1400000; });
 
 /* inject product & colour strings into the translation dictionaries */
 ['ru','en','uz'].forEach(l=>{
@@ -279,10 +320,17 @@ function formatPrice(n, lang){
   return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep) + ' ' + word;
 }
 
+/* band lines double as a filterable sub-type, like bag types */
+const SUBTYPES = {
+  bag:   ['picture','initials','zodiac'],
+  whoop: ['leather','cloudknit','superknit','luxe']
+};
+const BADGE_TYPES = ['initials','zodiac','leather','cloudknit','superknit','luxe'];
+
 function cardHTML(p,i){
-  const showBadge = p.type==='initials' || p.type==='zodiac';
+  const showBadge = BADGE_TYPES.includes(p.type);
   return `
-    <article class="card reveal d${(i%4)+1}" data-category="${p.category}" data-type="${p.type||''}" data-color="${p.color}" data-price="${p.price}">
+    <article class="card reveal d${(i%4)+1}" data-category="${p.category}" data-type="${p.type||''}" data-color="${p.color}" data-price="${p.price ?? ''}">
       <div class="card-img"><img src="${p.img}" alt="${p.name}" loading="lazy"></div>
       <div class="card-body">
         <h3>${p.name}</h3>
@@ -291,7 +339,7 @@ function cardHTML(p,i){
           ${showBadge?`<span class="card-type" data-i18n="badge.${p.type}"></span>`:''}
         </div>
         ${p.desc?`<p class="desc" data-i18n="prod.${p.id}.desc"></p>`:'<div class="desc-spacer"></div>'}
-        <span class="price-pill" data-price="${p.price}"></span>
+        <span class="price-pill" ${p.usd!=null?`data-usd="${p.usd}"`:`data-price="${p.price}"`}></span>
         <a href="${TG}" target="_blank" rel="noopener" class="btn btn-primary">${TG_ICON}<span data-i18n="order"></span></a>
       </div>
     </article>`;
@@ -333,6 +381,20 @@ function setupFilters(){
   const typeRow=document.getElementById('typeRow');
   let cat='', type='', color='';
 
+  // build the sub-type chips for the active category (bag types, whoop lines…)
+  function buildTypeRow(){
+    if(!typeRow) return;
+    const subs = SUBTYPES[cat];
+    if(!subs){ typeRow.hidden=true; typeRow.innerHTML=''; return; }
+    typeRow.hidden=false;
+    typeRow.innerHTML =
+      `<button class="chip${type===''?' active':''}" data-type="" data-i18n="type.all"></button>` +
+      subs.map(t=>`<button class="chip${type===t?' active':''}" data-type="${t}" data-i18n="type.${t}"></button>`).join('');
+    typeRow.querySelectorAll('[data-type]').forEach(b=>
+      b.addEventListener('click', ()=>{ type=b.dataset.type||''; apply(); }));
+    applyLang(localStorage.getItem('chapterone_lang')||'ru'); // localise the freshly built chips
+  }
+
   function apply(){
     // which colours actually exist for the current category + type (ignoring colour)
     const avail=new Set();
@@ -359,22 +421,20 @@ function setupFilters(){
     if(allBtn) allBtn.classList.toggle('active', !color);
     if(catRow) catRow.querySelectorAll('[data-cat]').forEach(b=> b.classList.toggle('active', (b.dataset.cat||'')===cat));
     if(typeRow){
-      typeRow.hidden = (cat!=='bag');
       typeRow.querySelectorAll('[data-type]').forEach(b=> b.classList.toggle('active', (b.dataset.type||'')===type));
     }
     if(empty) empty.style.display = shown? 'none':'block';
   }
 
   if(catRow) catRow.querySelectorAll('[data-cat]').forEach(b=>
-    b.addEventListener('click', ()=>{ cat=b.dataset.cat||''; if(cat!=='bag') type=''; apply(); }));
-  if(typeRow) typeRow.querySelectorAll('[data-type]').forEach(b=>
-    b.addEventListener('click', ()=>{ type=b.dataset.type||''; apply(); }));
+    b.addEventListener('click', ()=>{ cat=b.dataset.cat||''; type=''; buildTypeRow(); apply(); }));
   if(swHost) swHost.querySelectorAll('.swatch[data-color]').forEach(s=>{
     const pick=()=>{ color = (color===s.dataset.color)?'':s.dataset.color; apply(); };
     s.addEventListener('click', pick);
     s.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); pick(); } });
   });
   if(allBtn) allBtn.addEventListener('click', ()=>{ color=''; apply(); });
+  buildTypeRow();
   apply();
 }
 
@@ -401,6 +461,8 @@ function applyLang(lang){
   });
   // localise every price pill from its numeric data-price
   document.querySelectorAll('.price-pill[data-price]').forEach(el=>{ el.textContent = formatPrice(+el.dataset.price, lang); });
+  // bands are priced in USD by the supplier — shown as-is, no conversion
+  document.querySelectorAll('.price-pill[data-usd]').forEach(el=>{ el.textContent = '$' + el.dataset.usd; });
   // update active state on every switcher
   document.querySelectorAll('[data-switch] button').forEach(b=>{
     b.classList.toggle('active', b.getAttribute('data-set-lang')===lang);
