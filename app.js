@@ -38,7 +38,7 @@ const translations = {
     "page.collection.sub":"Бархатные косметички с ручной вышивкой — и ремешки Whoop 5.0.",
     "cat.all":"Все","cat.cosmetic":"Косметички","cat.bag":"Сумочки","cat.mom":"Для мам","cat.bride":"Для невест","cat.whoop":"Whoop ремешки",
     "type.all":"Все","type.picture":"Рисунки","type.initials":"Инициалы","type.zodiac":"Знаки зодиака",
-    "type.traincase":"Кейсы","type.dome":"Купольные","type.flat":"Плоские","type.ruffle":"С рюшами",
+    "type.traincase":"Кейсы","type.dome":"Купольные","type.ruffle":"С рюшами",
     "type.leather":"Кожаные","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Инициалы","badge.zodiac":"Знак зодиака",
     "badge.leather":"Кожа","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -85,7 +85,7 @@ const translations = {
     "page.collection.sub":"Hand-embroidered velvet pouches — and Whoop 5.0 bands.",
     "cat.all":"All","cat.cosmetic":"Cosmetic cases","cat.bag":"Pouches","cat.mom":"For Mum","cat.bride":"For the Bride","cat.whoop":"Whoop bands",
     "type.all":"All","type.picture":"Designs","type.initials":"Initials","type.zodiac":"Zodiac",
-    "type.traincase":"Train Cases","type.dome":"Dome Pouches","type.flat":"Flat Pouches","type.ruffle":"Ruffle Pouches",
+    "type.traincase":"Train Cases","type.dome":"Dome Pouches","type.ruffle":"Ruffle Pouches",
     "type.leather":"Leather","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initials","badge.zodiac":"Zodiac",
     "badge.leather":"Leather","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -132,7 +132,7 @@ const translations = {
     "page.collection.sub":"Qo‘lda kashta tikilgan baxmal sumkalar — va Whoop 5.0 tasmalari.",
     "cat.all":"Hammasi","cat.cosmetic":"Kosmetichkalar","cat.bag":"Sumkalar","cat.mom":"Onalar uchun","cat.bride":"Kelinlar uchun","cat.whoop":"Whoop tasmalar",
     "type.all":"Hammasi","type.picture":"Rasmlar","type.initials":"Initsiallar","type.zodiac":"Zodiak belgilari",
-    "type.traincase":"Keys sumkalar","type.dome":"Gumbazsimon","type.flat":"Yassi","type.ruffle":"Jabrali",
+    "type.traincase":"Keys sumkalar","type.dome":"Gumbazsimon","type.ruffle":"Jabrali",
     "type.leather":"Teri","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initsiallar","badge.zodiac":"Zodiak",
     "badge.leather":"Teri","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -179,20 +179,20 @@ const COLORS=[
 const COLOR_HEX={}; COLORS.forEach(c=>COLOR_HEX[c.id]=c.hex);
 
 const PRODUCTS=[
-  {id:"world-ocean",name:"World Ocean",img:"world-ocean.jpg",color:"navy",featured:true,desc:{ru:"Вдохновлено красотой морской жизни",en:"Inspired by the beauty of ocean life",uz:"Dengiz hayotining go‘zalligi bilan ilhomlangan"}},
-  {id:"baby-elephant",name:"Baby Elephant Conservation",img:"baby-elephant.jpg",color:"navy",desc:{ru:"Для защиты слонов и их естественной среды обитания",en:"For the protection of elephants and their natural habitat",uz:"Fillar va ularning tabiiy yashash muhitini himoya qilish uchun"}},
-  {id:"mystical-whales",name:"Mystical Whales",img:"mystical-whales.jpg",color:"navy",desc:{ru:"Магия китов и таинство океанских глубин",en:"The magic of whales and the mystery of the ocean depths",uz:"Kitlarning sehri va okean tubining sirlari"}},
-  {id:"seashells",name:"Seashells",img:"IMG_4390.jpg",color:"mulberry",desc:{ru:"Ракушки и морские звёзды на бархате цвета бордо",en:"Shells and starfish on rich mulberry velvet",uz:"To‘q qizil baxmalda chig‘anoqlar va dengiz yulduzlari"}},
-  {id:"sea-turtles",name:"Sea Turtles",img:"IMG_4394.jpg",color:"lagoon",desc:{ru:"Морские черепахи на бархате цвета морской волны",en:"Sea turtles drifting across ocean-teal velvet",uz:"Dengiz to‘lqini rangidagi baxmalda dengiz toshbaqalari"}},
-  {id:"mystic-eyes",name:"Mystic Eyes",img:"IMG_4395.jpg",color:"peacock",desc:{ru:"Золотые глаза-обереги на глубоком павлиньем бархате",en:"Golden protective eyes on deep peacock velvet",uz:"Chuqur tovus rangidagi baxmalda oltin ko‘z-tumorlar"}},
-  {id:"tropical-safari",name:"Tropical Safari",img:"IMG_4396.jpg",color:"coral",desc:{ru:"Зебры, жирафы и пальмы на коралловом бархате",en:"Zebras, giraffes and palms on coral velvet",uz:"Marjon rangidagi baxmalda zebra, jirafa va palmalar"}},
-  {id:"celestial-eye",name:"Celestial Eye",img:"IMG_4399.jpg",color:"peacock",desc:{ru:"Звёзды, луны и всевидящее око на изумрудной глубине",en:"Stars, moons and an all-seeing eye on emerald depths",uz:"Zumrad tubida yulduzlar, oylar va boqiy ko‘z"}},
-  {id:"wildflower",name:"Wildflower Meadow",img:"IMG_4393.jpg",color:"sage",desc:{ru:"Полевые цветы на нежном шалфейном бархате",en:"Wildflowers scattered over soft sage velvet",uz:"Yumshoq shalfey rangidagi baxmalda dala gullari"}},
-  {id:"midnight-garden",name:"Midnight Garden",img:"IMG_4391.jpg",color:"ink",desc:{ru:"Цветущий сад на чернильно-чёрном бархате",en:"A blooming garden on inky black velvet",uz:"Siyoh-qora baxmalda gullagan bog‘"}},
-  {id:"leopards",name:"Leopards",img:"IMG_4406.jpg",color:"scarlet",desc:{ru:"Леопарды в саду на алом бархате",en:"Leopards in the garden on scarlet velvet",uz:"Qizil baxmalda bog‘dagi leopardlar"}},
-  {id:"lions",name:"Lion & Lioness",img:"IMG_4407.jpg",color:"cornflower",desc:{ru:"Лев и львица под звёздами на васильковом бархате",en:"Lion and lioness beneath the stars on cornflower velvet",uz:"Moviy baxmalda yulduzlar ostida sher va urg‘ochi sher"}},
-  {id:"peony-garden",name:"Peony Garden",img:"IMG_4403.jpg",color:"navy",desc:{ru:"Пионы и розы на тёмно-синем бархате",en:"Peonies and roses on deep navy velvet",uz:"To‘q ko‘k baxmalda pionlar va atirgullar"}},
-  {id:"floral-lattice",name:"Floral Lattice",img:"IMG_4400.jpg",color:"eucalyptus",desc:{ru:"Цветочная решётка на бархате цвета эвкалипта",en:"A floral lattice on eucalyptus velvet",uz:"Evkalipt rangidagi baxmalda gulli panjara"}},
+  {id:"world-ocean",name:"World Ocean",img:"world-ocean.jpg",type:"traincase",color:"navy",featured:true,desc:{ru:"Вдохновлено красотой морской жизни",en:"Inspired by the beauty of ocean life",uz:"Dengiz hayotining go‘zalligi bilan ilhomlangan"}},
+  {id:"baby-elephant",name:"Baby Elephant Conservation",img:"baby-elephant.jpg",type:"traincase",color:"navy",desc:{ru:"Для защиты слонов и их естественной среды обитания",en:"For the protection of elephants and their natural habitat",uz:"Fillar va ularning tabiiy yashash muhitini himoya qilish uchun"}},
+  {id:"mystical-whales",name:"Mystical Whales",img:"mystical-whales.jpg",type:"traincase",color:"navy",desc:{ru:"Магия китов и таинство океанских глубин",en:"The magic of whales and the mystery of the ocean depths",uz:"Kitlarning sehri va okean tubining sirlari"}},
+  {id:"seashells",name:"Seashells",img:"IMG_4390.jpg",type:"traincase",color:"mulberry",desc:{ru:"Ракушки и морские звёзды на бархате цвета бордо",en:"Shells and starfish on rich mulberry velvet",uz:"To‘q qizil baxmalda chig‘anoqlar va dengiz yulduzlari"}},
+  {id:"sea-turtles",name:"Sea Turtles",img:"IMG_4394.jpg",type:"traincase",color:"lagoon",desc:{ru:"Морские черепахи на бархате цвета морской волны",en:"Sea turtles drifting across ocean-teal velvet",uz:"Dengiz to‘lqini rangidagi baxmalda dengiz toshbaqalari"}},
+  {id:"mystic-eyes",name:"Mystic Eyes",img:"IMG_4395.jpg",type:"traincase",color:"peacock",desc:{ru:"Золотые глаза-обереги на глубоком павлиньем бархате",en:"Golden protective eyes on deep peacock velvet",uz:"Chuqur tovus rangidagi baxmalda oltin ko‘z-tumorlar"}},
+  {id:"tropical-safari",name:"Tropical Safari",img:"IMG_4396.jpg",type:"traincase",color:"coral",desc:{ru:"Зебры, жирафы и пальмы на коралловом бархате",en:"Zebras, giraffes and palms on coral velvet",uz:"Marjon rangidagi baxmalda zebra, jirafa va palmalar"}},
+  {id:"celestial-eye",name:"Celestial Eye",img:"IMG_4399.jpg",type:"traincase",color:"peacock",desc:{ru:"Звёзды, луны и всевидящее око на изумрудной глубине",en:"Stars, moons and an all-seeing eye on emerald depths",uz:"Zumrad tubida yulduzlar, oylar va boqiy ko‘z"}},
+  {id:"wildflower",name:"Wildflower Meadow",img:"IMG_4393.jpg",type:"traincase",color:"sage",desc:{ru:"Полевые цветы на нежном шалфейном бархате",en:"Wildflowers scattered over soft sage velvet",uz:"Yumshoq shalfey rangidagi baxmalda dala gullari"}},
+  {id:"midnight-garden",name:"Midnight Garden",img:"IMG_4391.jpg",type:"traincase",color:"ink",desc:{ru:"Цветущий сад на чернильно-чёрном бархате",en:"A blooming garden on inky black velvet",uz:"Siyoh-qora baxmalda gullagan bog‘"}},
+  {id:"leopards",name:"Leopards",img:"IMG_4406.jpg",type:"traincase",color:"scarlet",desc:{ru:"Леопарды в саду на алом бархате",en:"Leopards in the garden on scarlet velvet",uz:"Qizil baxmalda bog‘dagi leopardlar"}},
+  {id:"lions",name:"Lion & Lioness",img:"IMG_4407.jpg",type:"traincase",color:"cornflower",desc:{ru:"Лев и львица под звёздами на васильковом бархате",en:"Lion and lioness beneath the stars on cornflower velvet",uz:"Moviy baxmalda yulduzlar ostida sher va urg‘ochi sher"}},
+  {id:"peony-garden",name:"Peony Garden",img:"IMG_4403.jpg",type:"traincase",color:"navy",desc:{ru:"Пионы и розы на тёмно-синем бархате",en:"Peonies and roses on deep navy velvet",uz:"To‘q ko‘k baxmalda pionlar va atirgullar"}},
+  {id:"floral-lattice",name:"Floral Lattice",img:"IMG_4400.jpg",type:"traincase",color:"eucalyptus",desc:{ru:"Цветочная решётка на бархате цвета эвкалипта",en:"A floral lattice on eucalyptus velvet",uz:"Evkalipt rangidagi baxmalda gulli panjara"}},
 
   /* ---- Group 1: new cosmetic cases (train case, top handle) · 1 400 000 ---- */
   {id:"c-suns",name:"Golden Suns",img:"img/cosmetic-suns.jpg",type:"traincase",color:"terracotta",desc:{ru:"Золотые солнца на терракотовом бархате",en:"Golden suns on terracotta velvet",uz:"Terrakota baxmalda oltin quyoshlar"}},
@@ -238,6 +238,18 @@ const PRODUCTS=[
   {id:"b-peaches",name:"Peaches",img:"img/bag-peaches-sage.jpg",category:"bag",price:900000,type:"picture",color:"sage"},
   {id:"b-safari",name:"Safari Flamingo",img:"img/bag-safari-flamingo.jpg",category:"bag",price:900000,type:"picture",color:"ink"},
 
+  /* ---- Group 2b: pouches · 900 000 · pictures · added 2026-07-05 (same flat-pouch shape, merged from cosmetic) ---- */
+  {id:"b-palm-pink",name:"Pink Palms",img:"img/cos09-palm-pink.jpg",category:"bag",price:900000,type:"picture",color:"berry",desc:{ru:"Золотые пальмы на ярко-розовом бархате",en:"Golden palms on vivid pink velvet",uz:"Yorqin pushti baxmalda oltin palmalar"}},
+  {id:"b-peacock-navy",name:"Peacock Trellis",img:"img/cos09-peacock-navy.jpg",category:"bag",price:900000,type:"picture",color:"navy",desc:{ru:"Павлины в решётке на тёмно-синем бархате",en:"Peacocks in a trellis on navy velvet",uz:"To‘q ko‘k baxmalda panjarali tovuslar"}},
+  {id:"b-zebra-pink",name:"Zebra Safari",img:"img/cos09-zebra-pink.jpg",category:"bag",price:900000,type:"picture",color:"berry",desc:{ru:"Зебры и пальмы на розовом бархате",en:"Zebras and palms on pink velvet",uz:"Pushti baxmalda zebralar va palmalar"}},
+  {id:"b-tiger-teal",name:"Tiger Garden",img:"img/cos09-tiger-teal.jpg",category:"bag",price:900000,type:"picture",color:"lagoon",desc:{ru:"Тигры и небесное солнце на бархате морской волны",en:"Tigers and a celestial sun on teal velvet",uz:"Dengiz to‘lqini rangidagi baxmalda yo‘lbarslar va samoviy quyosh"}},
+  {id:"b-rose-cream",name:"Rose Bouquet",img:"img/cos09-rose-cream.jpg",category:"bag",price:900000,type:"picture",color:"linen",desc:{ru:"Букеты роз на льняную полоску",en:"Rose bouquets on a linen stripe",uz:"Zig‘ir chiziqda atirgul buketlari"}},
+  {id:"b-whale-song",name:"Whale Song",img:"img/cos09-whale-song.jpg",category:"bag",price:900000,type:"picture",color:"sky",desc:{ru:"Киты и звёзды на небесно-голубом бархате",en:"Whales and stars on sky-blue velvet",uz:"Osmon-ko‘k baxmalda kitlar va yulduzlar"}},
+  {id:"b-bee-navy",name:"Golden Bee Baroque",img:"img/cos09-bee-navy.jpg",category:"bag",price:900000,type:"picture",color:"navy",desc:{ru:"Золотая пчела в барочном орнаменте на тёмно-синем бархате",en:"A golden bee in a baroque frame on navy velvet",uz:"To‘q ko‘k baxmalda barokko naqshli oltin asalari"}},
+  {id:"b-grapevine",name:"Grapevine",img:"img/cos09-grapevine.jpg",category:"bag",price:900000,type:"picture",color:"linen",desc:{ru:"Виноградная лоза на льняном холсте",en:"A grapevine on natural linen",uz:"Tabiiy zig‘ir matoda uzum toki"}},
+  {id:"b-floral-scatter",name:"Floral Scatter",img:"img/cos09-floral-scatter.jpg",category:"bag",price:900000,type:"picture",color:"peacock",desc:{ru:"Рассыпанные цветы на тёмно-бирюзовом бархате",en:"Scattered flowers on deep teal velvet",uz:"To‘q tovus rang baxmalda sochilgan gullar"}},
+  {id:"b-wildflower-bloom",name:"Wildflower Bloom",img:"img/cos09-wildflower-bloom.jpg",category:"bag",price:900000,type:"picture",color:"peacock",desc:{ru:"Яркие полевые цветы на тёмно-бирюзовом бархате",en:"Vivid wildflowers on deep teal velvet",uz:"To‘q tovus rang baxmalda yorqin dala gullari"}},
+
   /* ---- Group 2: pouches · 900 000 · zodiac ---- */
   {id:"z-aries",name:"Aries",img:"img/zodiac-aries.jpg",category:"bag",price:900000,type:"zodiac",color:"navy"},
   {id:"z-gemini",name:"Gemini",img:"img/zodiac-gemini.jpg",category:"bag",price:900000,type:"zodiac",color:"navy"},
@@ -251,6 +263,11 @@ const PRODUCTS=[
   {id:"i-celestial",name:"Celestial Monogram",img:"img/initial-celestial.jpg",category:"bag",price:900000,type:"initials",color:"navy",desc:{ru:"Звёздная буква на ваш выбор (A–Z)",en:"A celestial letter of your choice (A–Z)",uz:"Tanlovingiz bo‘yicha yulduzli harf (A–Z)"}},
   {id:"i-sun",name:"Sunlit Monogram",img:"img/initial-sun.jpg",category:"bag",price:900000,type:"initials",color:"navy",desc:{ru:"Буква с солнцем и сердцами (A–Z)",en:"A letter with sun and hearts (A–Z)",uz:"Quyosh va yuraklar bilan harf (A–Z)"}},
   {id:"i-safari",name:"Safari Monogram",img:"img/initial-safari.jpg",category:"bag",price:900000,type:"initials",color:"navy",desc:{ru:"Буква с сафари-животными (A–Z)",en:"A letter with safari animals (A–Z)",uz:"Safari hayvonlari bilan harf (A–Z)"}},
+
+  /* ---- Group 2c: pouches · 1 000 000 · ruffle-trim · added 2026-07-05 (moved from cosmetic) ---- */
+  {id:"b-sun-pink-ruffle",name:"Golden Sun Ruffle",img:"img/cos10-sun-pink.jpg",category:"bag",price:1000000,type:"ruffle",color:"coral",desc:{ru:"Золотое солнце на розовую полоску с рюшами",en:"A golden sun on a pink stripe with ruffled trim",uz:"Jabra bilan pushti chiziqda oltin quyosh"}},
+  {id:"b-sun-yellow-ruffle",name:"Golden Sun Ruffle",img:"img/cos10-sun-yellow.jpg",category:"bag",price:1000000,type:"ruffle",color:"sand",desc:{ru:"Золотое солнце на жёлтую полоску с рюшами",en:"A golden sun on a yellow stripe with ruffled trim",uz:"Jabra bilan sariq chiziqda oltin quyosh"}},
+  {id:"b-lobster-ruffle",name:"Lobster Ruffle",img:"img/cos10-lobster-ruffle.jpg",category:"bag",price:1000000,type:"ruffle",color:"sky",desc:{ru:"Раки на бело-голубую полоску с рюшами",en:"Lobsters on a blue-and-white stripe with ruffled trim",uz:"Jabra bilan oq-ko‘k chiziqda qisqichbaqalar"}},
 
   /* ---- Group 3: pouches for mum · 900 000 ---- */
   {id:"mom-wildflowers",name:"Mum · Wildflowers",img:"img/mom-wildflowers.jpg",category:"mom",price:1000000,color:"sage"},
@@ -297,23 +314,6 @@ const PRODUCTS=[
   {id:"cos11-peacock-trellis",name:"Peacock Trellis",img:"img/cos11-peacock-trellis.jpg",category:"cosmetic",price:1100000,type:"dome",color:"navy",desc:{ru:"Павлины в решётке на тёмно-синем бархате",en:"Peacocks in a trellis on navy velvet",uz:"To‘q ko‘k baxmalda panjarali tovuslar"}},
   {id:"cos11-palm-olive",name:"Palm Grove",img:"img/cos11-palm-olive.jpg",category:"cosmetic",price:1100000,type:"dome",color:"olive",desc:{ru:"Пальмовая роща на оливковом бархате",en:"A palm grove on olive velvet",uz:"Zaytun rang baxmalda palma o‘rmoni"}},
 
-  /* ---- Group 7: flat cosmetic pouches (no handle, no base) · 900 000 · added 2026-07-05 ---- */
-  {id:"cos09-palm-pink",name:"Pink Palms",img:"img/cos09-palm-pink.jpg",category:"cosmetic",price:900000,type:"flat",color:"berry",desc:{ru:"Золотые пальмы на ярко-розовом бархате",en:"Golden palms on vivid pink velvet",uz:"Yorqin pushti baxmalda oltin palmalar"}},
-  {id:"cos09-peacock-navy",name:"Peacock Trellis",img:"img/cos09-peacock-navy.jpg",category:"cosmetic",price:900000,type:"flat",color:"navy",desc:{ru:"Павлины в решётке на тёмно-синем бархате",en:"Peacocks in a trellis on navy velvet",uz:"To‘q ko‘k baxmalda panjarali tovuslar"}},
-  {id:"cos09-zebra-pink",name:"Zebra Safari",img:"img/cos09-zebra-pink.jpg",category:"cosmetic",price:900000,type:"flat",color:"berry",desc:{ru:"Зебры и пальмы на розовом бархате",en:"Zebras and palms on pink velvet",uz:"Pushti baxmalda zebralar va palmalar"}},
-  {id:"cos09-tiger-teal",name:"Tiger Garden",img:"img/cos09-tiger-teal.jpg",category:"cosmetic",price:900000,type:"flat",color:"lagoon",desc:{ru:"Тигры и небесное солнце на бархате морской волны",en:"Tigers and a celestial sun on teal velvet",uz:"Dengiz to‘lqini rangidagi baxmalda yo‘lbarslar va samoviy quyosh"}},
-  {id:"cos09-rose-cream",name:"Rose Bouquet",img:"img/cos09-rose-cream.jpg",category:"cosmetic",price:900000,type:"flat",color:"linen",desc:{ru:"Букеты роз на льняную полоску",en:"Rose bouquets on a linen stripe",uz:"Zig‘ir chiziqda atirgul buketlari"}},
-  {id:"cos09-whale-song",name:"Whale Song",img:"img/cos09-whale-song.jpg",category:"cosmetic",price:900000,type:"flat",color:"sky",desc:{ru:"Киты и звёзды на небесно-голубом бархате",en:"Whales and stars on sky-blue velvet",uz:"Osmon-ko‘k baxmalda kitlar va yulduzlar"}},
-  {id:"cos09-bee-navy",name:"Golden Bee Baroque",img:"img/cos09-bee-navy.jpg",category:"cosmetic",price:900000,type:"flat",color:"navy",desc:{ru:"Золотая пчела в барочном орнаменте на тёмно-синем бархате",en:"A golden bee in a baroque frame on navy velvet",uz:"To‘q ko‘k baxmalda barokko naqshli oltin asalari"}},
-  {id:"cos09-grapevine",name:"Grapevine",img:"img/cos09-grapevine.jpg",category:"cosmetic",price:900000,type:"flat",color:"linen",desc:{ru:"Виноградная лоза на льняном холсте",en:"A grapevine on natural linen",uz:"Tabiiy zig‘ir matoda uzum toki"}},
-  {id:"cos09-floral-scatter",name:"Floral Scatter",img:"img/cos09-floral-scatter.jpg",category:"cosmetic",price:900000,type:"flat",color:"peacock",desc:{ru:"Рассыпанные цветы на тёмно-бирюзовом бархате",en:"Scattered flowers on deep teal velvet",uz:"To‘q tovus rang baxmalda sochilgan gullar"}},
-  {id:"cos09-wildflower-bloom",name:"Wildflower Bloom",img:"img/cos09-wildflower-bloom.jpg",category:"cosmetic",price:900000,type:"flat",color:"peacock",desc:{ru:"Яркие полевые цветы на тёмно-бирюзовом бархате",en:"Vivid wildflowers on deep teal velvet",uz:"To‘q tovus rang baxmalda yorqin dala gullari"}},
-
-  /* ---- Group 8: ruffle-trim cosmetic pouches · 1 000 000 · added 2026-07-05 ---- */
-  {id:"cos10-sun-pink",name:"Golden Sun Ruffle",img:"img/cos10-sun-pink.jpg",category:"cosmetic",price:1000000,type:"ruffle",color:"coral",desc:{ru:"Золотое солнце на розовую полоску с рюшами",en:"A golden sun on a pink stripe with ruffled trim",uz:"Jabra bilan pushti chiziqda oltin quyosh"}},
-  {id:"cos10-sun-yellow",name:"Golden Sun Ruffle",img:"img/cos10-sun-yellow.jpg",category:"cosmetic",price:1000000,type:"ruffle",color:"sand",desc:{ru:"Золотое солнце на жёлтую полоску с рюшами",en:"A golden sun on a yellow stripe with ruffled trim",uz:"Jabra bilan sariq chiziqda oltin quyosh"}},
-  {id:"cos10-lobster-ruffle",name:"Lobster Ruffle",img:"img/cos10-lobster-ruffle.jpg",category:"cosmetic",price:1000000,type:"ruffle",color:"sky",desc:{ru:"Раки на бело-голубую полоску с рюшами",en:"Lobsters on a blue-and-white stripe with ruffled trim",uz:"Jabra bilan oq-ko‘k chiziqda qisqichbaqalar"}},
-
   /* ===== WHOOP 5.0 BANDS ===== */
 
   /* ---- Leather Band · $150 ---- */
@@ -359,8 +359,8 @@ function formatPrice(n, lang){
 
 /* band lines double as a filterable sub-type, like bag types */
 const SUBTYPES = {
-  cosmetic: ['traincase','dome','flat','ruffle'],
-  bag:   ['picture','initials','zodiac'],
+  cosmetic: ['traincase','dome'],
+  bag:   ['picture','initials','zodiac','ruffle'],
   whoop: ['leather','cloudknit','superknit','luxe']
 };
 const BADGE_TYPES = ['initials','zodiac','leather','cloudknit','superknit','luxe'];
