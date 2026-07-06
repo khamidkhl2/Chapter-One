@@ -38,7 +38,7 @@ const translations = {
     "page.collection.sub":"Бархатные косметички с ручной вышивкой — и ремешки Whoop 5.0.",
     "cat.all":"Все","cat.cosmetic":"Косметички","cat.bag":"Сумочки","cat.mom":"Для мам","cat.bride":"Для невест","cat.whoop":"Whoop ремешки",
     "type.all":"Все","type.picture":"Рисунки","type.initials":"Инициалы","type.zodiac":"Знаки зодиака",
-    "type.traincase":"Кейсы","type.dome":"Купольные","type.ruffle":"С рюшами",
+    "type.traincase":"Кейсы","type.dome":"Купольные","type.ruffle":"С рюшами","type.tassel":"С кисточкой",
     "type.leather":"Кожаные","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Инициалы","badge.zodiac":"Знак зодиака",
     "badge.leather":"Кожа","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -85,7 +85,7 @@ const translations = {
     "page.collection.sub":"Hand-embroidered velvet pouches — and Whoop 5.0 bands.",
     "cat.all":"All","cat.cosmetic":"Cosmetic cases","cat.bag":"Pouches","cat.mom":"For Mum","cat.bride":"For the Bride","cat.whoop":"Whoop bands",
     "type.all":"All","type.picture":"Designs","type.initials":"Initials","type.zodiac":"Zodiac",
-    "type.traincase":"Train Cases","type.dome":"Dome Pouches","type.ruffle":"Ruffle Pouches",
+    "type.traincase":"Train Cases","type.dome":"Dome Pouches","type.ruffle":"Ruffle Pouches","type.tassel":"Tassel Pouches",
     "type.leather":"Leather","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initials","badge.zodiac":"Zodiac",
     "badge.leather":"Leather","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -132,7 +132,7 @@ const translations = {
     "page.collection.sub":"Qo‘lda kashta tikilgan baxmal sumkalar — va Whoop 5.0 tasmalari.",
     "cat.all":"Hammasi","cat.cosmetic":"Kosmetichkalar","cat.bag":"Sumkalar","cat.mom":"Onalar uchun","cat.bride":"Kelinlar uchun","cat.whoop":"Whoop tasmalar",
     "type.all":"Hammasi","type.picture":"Rasmlar","type.initials":"Initsiallar","type.zodiac":"Zodiak belgilari",
-    "type.traincase":"Keys sumkalar","type.dome":"Gumbazsimon","type.ruffle":"Jabrali",
+    "type.traincase":"Keys sumkalar","type.dome":"Gumbazsimon","type.ruffle":"Jabrali","type.tassel":"Popukli",
     "type.leather":"Teri","type.cloudknit":"CloudKnit","type.superknit":"SuperKnit","type.luxe":"SuperKnit Luxe",
     "badge.initials":"Initsiallar","badge.zodiac":"Zodiak",
     "badge.leather":"Teri","badge.cloudknit":"CloudKnit","badge.superknit":"SuperKnit","badge.luxe":"Luxe",
@@ -212,6 +212,11 @@ const PRODUCTS=[
   {id:"c-tiger-garden",name:"Tiger Garden",img:"img/cosmetic-tiger-garden.jpg",type:"traincase",color:"lagoon",desc:{ru:"Тигры и небесное солнце на бархате морской волны",en:"Tigers and a celestial sun on teal velvet",uz:"Dengiz to‘lqini rangidagi baxmalda yo‘lbarslar va samoviy quyosh"}},
   {id:"c-bow-trellis",name:"Bow Trellis",img:"img/cosmetic-bow-trellis.jpg",type:"traincase",color:"cornflower",desc:{ru:"Банты на решётке васильково-синего бархата",en:"Bows on a trellis of denim-blue velvet",uz:"Moviy baxmalda panjara ustida bantlar"}},
   {id:"c-lobster-red",name:"Red Lobster",img:"img/cosmetic-lobster-red.jpg",type:"traincase",color:"scarlet",desc:{ru:"Раки на алом бархате",en:"Lobsters on scarlet velvet",uz:"Qizil baxmalda qisqichbaqalar"}},
+
+  /* ---- Group 1c: monogram train cases · 1 400 000 · added 2026-07-07 ---- */
+  {id:"ic-safari-case",name:"Safari Monogram",img:"img/initial-safari-case.jpg",category:"cosmetic",price:1400000,type:"initials",color:"navy",desc:{ru:"Буква с сафари-животными (A–Z)",en:"A letter with safari animals (A–Z)",uz:"Safari hayvonlari bilan harf (A–Z)"}},
+  {id:"ic-sun-case",name:"Sunlit Monogram",img:"img/initial-sun-case.jpg",category:"cosmetic",price:1400000,type:"initials",color:"navy",desc:{ru:"Буква с солнцем и сердцами (A–Z)",en:"A letter with sun and hearts (A–Z)",uz:"Quyosh va yuraklar bilan harf (A–Z)"}},
+  {id:"ic-floral-case",name:"Floral Monogram",img:"img/initial-floral-case.jpg",category:"cosmetic",price:1400000,type:"initials",color:"olive",desc:{ru:"Буква с полевыми цветами (A–Z)",en:"A letter with wildflowers (A–Z)",uz:"Dala gullari bilan harf (A–Z)"}},
 
   /* ---- Group 2: pouches · 900 000 · pictures ---- */
   {id:"b-wildflowers",name:"Wildflowers",img:"img/bag-wildflowers.jpg",category:"bag",price:900000,type:"picture",color:"ink"},
@@ -314,6 +319,33 @@ const PRODUCTS=[
   {id:"cos11-peacock-trellis",name:"Peacock Trellis",img:"img/cos11-peacock-trellis.jpg",category:"cosmetic",price:1100000,type:"dome",color:"navy",desc:{ru:"Павлины в решётке на тёмно-синем бархате",en:"Peacocks in a trellis on navy velvet",uz:"To‘q ko‘k baxmalda panjarali tovuslar"}},
   {id:"cos11-palm-olive",name:"Palm Grove",img:"img/cos11-palm-olive.jpg",category:"cosmetic",price:1100000,type:"dome",color:"olive",desc:{ru:"Пальмовая роща на оливковом бархате",en:"A palm grove on olive velvet",uz:"Zaytun rang baxmalda palma o‘rmoni"}},
 
+  /* ---- Group 9: tassel-pull cosmetic pouches (boxy base, braided tassel) · 1 200 000 · added 2026-07-06 ---- */
+  {id:"cos12-peaches-coral",name:"Peaches",img:"img/cos12-peaches-coral.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"coral",desc:{ru:"Персики на коралловом бархате",en:"Peaches on coral velvet",uz:"Marjon baxmalda shaftolilar"}},
+  {id:"cos12-peaches-sage",name:"Peaches",img:"img/cos12-peaches-sage.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"sage",desc:{ru:"Персики на шалфейном бархате",en:"Peaches on sage velvet",uz:"Shalfey baxmalda shaftolilar"}},
+  {id:"cos12-oranges",name:"Orange Blossom",img:"img/cos12-oranges.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"navy",desc:{ru:"Цветущие апельсины на тёмно-синем бархате",en:"Orange blossom on deep navy velvet",uz:"To‘q ko‘k baxmalda apelsin gullari"}},
+  {id:"cos12-starfish-trellis",name:"Starfish Trellis",img:"img/cos12-starfish-trellis.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"eucalyptus",desc:{ru:"Морские звёзды в решётке на эвкалиптовом бархате",en:"Starfish in a trellis on eucalyptus velvet",uz:"Evkalipt baxmalda panjarali dengiz yulduzlari"}},
+  {id:"cos12-wildflowers",name:"Wildflower Meadow",img:"img/cos12-wildflowers.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"sage",desc:{ru:"Полевые цветы на шалфейном бархате",en:"Wildflowers on sage velvet",uz:"Shalfey baxmalda dala gullari"}},
+  {id:"cos12-evil-eye",name:"Evil Eye",img:"img/cos12-evil-eye.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"peacock",desc:{ru:"Обережные глаза на тёмно-бирюзовом бархате",en:"Protective eyes on deep teal velvet",uz:"To‘q tovus rang baxmalda ko‘z-tumor naqshi"}},
+  {id:"cos12-elephants",name:"Baby Elephants",img:"img/cos12-elephants.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"navy",desc:{ru:"Слонята среди звёзд на синем бархате",en:"Baby elephants beneath the stars on blue velvet",uz:"Ko‘k baxmalda yulduzlar ostida fil bolalari"}},
+  {id:"cos12-heart-scarlet",name:"Sacred Heart",img:"img/cos12-heart-scarlet.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"scarlet",desc:{ru:"Священное сердце на алом бархате",en:"A sacred heart on scarlet velvet",uz:"Qizil baxmalda muqaddas yurak"}},
+  {id:"cos12-lobsters",name:"Lobsters",img:"img/cos12-lobsters.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"scarlet",desc:{ru:"Раки на алом бархате",en:"Lobsters on scarlet velvet",uz:"Qizil baxmalda qisqichbaqalar"}},
+  {id:"cos12-seashells",name:"Seashells",img:"img/cos12-seashells.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"mulberry",desc:{ru:"Ракушки и морские звёзды на бархате цвета бордо",en:"Shells and starfish on rich mulberry velvet",uz:"To‘q qizil baxmalda chig‘anoqlar va dengiz yulduzlari"}},
+  {id:"cos12-turtles-peacock",name:"Sea Turtles",img:"img/cos12-turtles-peacock.png",category:"cosmetic",price:1200000,type:"tassel",color:"peacock",desc:{ru:"Морские черепахи на тёмно-бирюзовом бархате",en:"Sea turtles on deep teal velvet",uz:"To‘q tovus rang baxmalda dengiz toshbaqalari"}},
+  {id:"cos12-turtles-sky",name:"Sea Turtles",img:"img/cos12-turtles-sky.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"sky",desc:{ru:"Морские черепахи на голубом бархате",en:"Sea turtles on sky-blue velvet",uz:"Osmon-ko‘k baxmalda toshbaqalar"}},
+  {id:"cos12-hearts-cornflower",name:"Sweet Hearts",img:"img/cos12-hearts-cornflower.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"cornflower",desc:{ru:"Сердечки на васильковом бархате",en:"Hearts on cornflower-blue velvet",uz:"Moviy baxmalda yuraklar"}},
+  {id:"cos12-suns-terracotta",name:"Golden Suns",img:"img/cos12-suns-terracotta.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"terracotta",desc:{ru:"Золотые солнца на терракотовом бархате",en:"Golden suns on terracotta velvet",uz:"Terrakota baxmalda oltin quyoshlar"}},
+  {id:"cos12-suns-navy",name:"Golden Suns",img:"img/cos12-suns-navy.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"navy",desc:{ru:"Золотые солнца на тёмно-синем бархате",en:"Golden suns on navy velvet",uz:"To‘q ko‘k baxmalda oltin quyoshlar"}},
+  {id:"cos12-bees-ink",name:"Golden Bees",img:"img/cos12-bees-ink.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"ink",desc:{ru:"Золотые пчёлы на чёрном бархате",en:"Golden bees on black velvet",uz:"Qora baxmalda oltin asalarilar"}},
+  {id:"cos12-bees-peacock",name:"Golden Bees",img:"img/cos12-bees-peacock.jpg",category:"cosmetic",price:1200000,type:"tassel",color:"peacock",desc:{ru:"Золотые пчёлы на тёмно-бирюзовом бархате",en:"Golden bees on deep teal velvet",uz:"To‘q tovus rang baxmalda oltin asalarilar"}},
+
+  /* ---- Group 10: initials monograms, duplicated under cosmetic · 900 000 · added 2026-07-06 (same products also listed under Pouches) ---- */
+  {id:"ci-celestial",name:"Celestial Monogram",img:"img/initial-celestial.jpg",category:"cosmetic",price:900000,type:"initials",color:"navy",desc:{ru:"Звёздная буква на ваш выбор (A–Z)",en:"A celestial letter of your choice (A–Z)",uz:"Tanlovingiz bo‘yicha yulduzli harf (A–Z)"}},
+  {id:"ci-sun",name:"Sunlit Monogram",img:"img/initial-sun.jpg",category:"cosmetic",price:900000,type:"initials",color:"navy",desc:{ru:"Буква с солнцем и сердцами (A–Z)",en:"A letter with sun and hearts (A–Z)",uz:"Quyosh va yuraklar bilan harf (A–Z)"}},
+  {id:"ci-safari",name:"Safari Monogram",img:"img/initial-safari.jpg",category:"cosmetic",price:900000,type:"initials",color:"navy",desc:{ru:"Буква с сафари-животными (A–Z)",en:"A letter with safari animals (A–Z)",uz:"Safari hayvonlari bilan harf (A–Z)"}},
+
+  /* ---- Group 10b: monogram tassel pouch · 1 200 000 · added 2026-07-07 ---- */
+  {id:"ic-sun-tassel",name:"Sunlit Monogram",img:"img/initial-sun-tassel.jpg",category:"cosmetic",price:1200000,type:"initials",color:"navy",desc:{ru:"Буква с солнцем и сердцами (A–Z)",en:"A letter with sun and hearts (A–Z)",uz:"Quyosh va yuraklar bilan harf (A–Z)"}},
+
   /* ===== WHOOP 5.0 BANDS ===== */
 
   /* ---- Leather Band · $150 ---- */
@@ -359,7 +391,7 @@ function formatPrice(n, lang){
 
 /* band lines double as a filterable sub-type, like bag types */
 const SUBTYPES = {
-  cosmetic: ['traincase','dome'],
+  cosmetic: ['traincase','dome','tassel','initials'],
   bag:   ['picture','initials','zodiac','ruffle'],
   whoop: ['leather','cloudknit','superknit','luxe']
 };
